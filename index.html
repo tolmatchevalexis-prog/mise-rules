@@ -2,7 +2,6 @@
 <html lang="fr">
 
 <head>
-
   <meta charset="utf-8">
 
   <meta
@@ -12,7 +11,7 @@
 
   <meta
     name="description"
-    content="M.I.S.E. — Maîtrise, Initiative, Synergie, Engagement. Une grammaire de jeu de rôle narratif sans dés pour improviser des histoires ensemble."
+    content="M.I.S.E. — Un système de jeu de rôle narratif sans dés. Corpus de règles, bibliographie et application compagnon."
   >
 
   <meta name="theme-color" content="#ffffff">
@@ -23,11 +22,7 @@
 
   <style>
 
-    /*
-    ================================================
-    AJUSTEMENTS PROPRES À LA PAGE D'ACCUEIL
-    ================================================
-    */
+    /* ACCUEIL */
 
     .home-intro {
       margin: 0 0 48px;
@@ -37,21 +32,15 @@
       margin-bottom: 1.4em;
     }
 
-    .home-section-title {
-      margin-top: 0;
-    }
-
     .toc-label {
       display: block;
       margin-bottom: 3px;
       color: var(--gris-fonce);
       font-size: 13px;
-      line-height: 1.5;
     }
 
     .toc-name {
       display: block;
-      color: var(--texte);
       font-size: 17px;
       line-height: 1.5;
     }
@@ -62,23 +51,13 @@
 
     .toc-list li a {
       padding: 0;
+      text-decoration: none;
     }
 
-    .toc-list li a:hover .toc-name {
+    .toc-list li a:hover .toc-name,
+    .toc-list li a:focus-visible .toc-name {
       text-decoration: underline;
       text-underline-offset: 4px;
-    }
-
-    .toc-pending {
-      opacity: 0.68;
-    }
-
-    .toc-status {
-      display: block;
-      margin-top: 4px;
-      color: var(--gris-fonce);
-      font-size: 12px;
-      font-style: italic;
     }
 
     .editorial-note {
@@ -91,8 +70,8 @@
     .editorial-note p {
       margin: 0;
       font-size: 16px;
-      line-height: 1.7;
       font-style: italic;
+      line-height: 1.7;
       text-align: left;
     }
 
@@ -117,7 +96,53 @@
       border-radius: var(--arrondi);
       color: var(--gris-fonce);
       font-size: 14px;
-      line-height: 1.4;
+    }
+
+    /* LE BUREAU DES INTERSTICES */
+
+    .universe-box {
+      margin: 72px 0 48px;
+      padding: 30px;
+      background: var(--gris-tres-clair);
+      border-radius: var(--arrondi);
+    }
+
+    .universe-label {
+      display: block;
+      margin-bottom: 12px;
+      color: var(--gris-fonce);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .universe-box h2 {
+      margin: 0 0 12px;
+      padding: 0;
+      border: 0;
+      font-size: 23px;
+    }
+
+    .universe-period {
+      margin-bottom: 20px;
+      font-size: 16px;
+      font-style: italic;
+    }
+
+    .universe-box p {
+      font-size: 16px;
+      line-height: 1.7;
+      text-align: left;
+    }
+
+    .universe-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 4px;
     }
 
     .home-credit {
@@ -147,12 +172,13 @@
         padding: 20px;
       }
 
-      .editorial-note p {
-        font-size: 15px;
+      .universe-box {
+        margin-top: 56px;
+        padding: 22px;
       }
 
-      .resource-section {
-        margin-top: 42px;
+      .universe-box h2 {
+        font-size: 21px;
       }
 
     }
@@ -161,19 +187,15 @@
 
 </head>
 
-
 <body>
 
 <a class="skip-link" href="#contenu">
   Aller au contenu
 </a>
 
-
 <div class="site">
 
-  <!-- ==========================================
-       EN-TÊTE
-       ========================================== -->
+  <!-- EN-TÊTE -->
 
   <header class="site-header">
 
@@ -203,10 +225,7 @@
         aria-label="Navigation principale"
       >
 
-        <a
-          href="index.html"
-          aria-current="page"
-        >
+        <a href="index.html" aria-current="page">
           Accueil
         </a>
 
@@ -214,7 +233,7 @@
           Les règles
         </a>
 
-        <a href="#documentation">
+        <a href="bibliographie.html">
           Documentation
         </a>
 
@@ -229,9 +248,7 @@
   </header>
 
 
-  <!-- ==========================================
-       CONTENU PRINCIPAL
-       ========================================== -->
+  <!-- CONTENU -->
 
   <main id="contenu" class="page">
 
@@ -240,9 +257,7 @@
       <article class="page-content">
 
 
-        <!-- ====================================
-             IDENTITÉ
-             ==================================== -->
+        <!-- IDENTITÉ -->
 
         <div class="brand">
 
@@ -261,9 +276,7 @@
         </div>
 
 
-        <!-- ====================================
-             INTRODUCTION
-             ==================================== -->
+        <!-- INTRODUCTION -->
 
         <section class="home-intro prose">
 
@@ -301,9 +314,7 @@
         </section>
 
 
-        <!-- ====================================
-             TEXTE ÉDITORIAL
-             ==================================== -->
+        <!-- NOTE ÉDITORIALE -->
 
         <aside class="editorial-note">
 
@@ -317,9 +328,7 @@
         </aside>
 
 
-        <!-- ====================================
-             SOMMAIRE
-             ==================================== -->
+        <!-- SOMMAIRE -->
 
         <nav
           class="toc"
@@ -327,165 +336,98 @@
           aria-labelledby="sommaire-titre"
         >
 
-          <h2
-            class="toc-title home-section-title"
-            id="sommaire-titre"
-          >
+          <h2 class="toc-title" id="sommaire-titre">
             Sommaire
           </h2>
 
           <ol class="toc-list">
 
-
-            <!-- INTRODUCTION -->
-
-            <li class="toc-pending">
-
-              <span class="toc-label">
-                Introduction
-              </span>
-
-              <span class="toc-name">
-                Une grammaire de jeu de rôle
-              </span>
-
-              <span class="toc-status">
-                Publication à venir
-              </span>
-
+            <li>
+              <a href="introduction.html">
+                <span class="toc-label">
+                  Introduction
+                </span>
+                <span class="toc-name">
+                  Une grammaire de jeu de rôle
+                </span>
+              </a>
             </li>
 
-
-            <!-- LIVRE I -->
-
-            <li class="toc-pending">
-
-              <span class="toc-label">
-                Livre I
-              </span>
-
-              <span class="toc-name">
-                Le personnage
-              </span>
-
-              <span class="toc-status">
-                Publication à venir
-              </span>
-
+            <li>
+              <a href="livre-1.html">
+                <span class="toc-label">
+                  Livre I
+                </span>
+                <span class="toc-name">
+                  Le personnage
+                </span>
+              </a>
             </li>
 
-
-            <!-- LIVRE II -->
-
-            <li class="toc-pending">
-
-              <span class="toc-label">
-                Livre II
-              </span>
-
-              <span class="toc-name">
-                Les actions
-              </span>
-
-              <span class="toc-status">
-                Publication à venir
-              </span>
-
+            <li>
+              <a href="livre-2.html">
+                <span class="toc-label">
+                  Livre II
+                </span>
+                <span class="toc-name">
+                  Les actions
+                </span>
+              </a>
             </li>
 
-
-            <!-- LIVRE III -->
-
-            <li class="toc-pending">
-
-              <span class="toc-label">
-                Livre III
-              </span>
-
-              <span class="toc-name">
-                Les oppositions
-              </span>
-
-              <span class="toc-status">
-                Publication à venir
-              </span>
-
+            <li>
+              <a href="livre-3.html">
+                <span class="toc-label">
+                  Livre III
+                </span>
+                <span class="toc-name">
+                  Les oppositions
+                </span>
+              </a>
             </li>
 
-
-            <!-- LIVRE IV -->
-
-            <li class="toc-pending">
-
-              <span class="toc-label">
-                Livre IV
-              </span>
-
-              <span class="toc-name">
-                Les blessures et la récupération
-              </span>
-
-              <span class="toc-status">
-                Publication à venir
-              </span>
-
+            <li>
+              <a href="livre-4.html">
+                <span class="toc-label">
+                  Livre IV
+                </span>
+                <span class="toc-name">
+                  Les blessures et la récupération
+                </span>
+              </a>
             </li>
 
-
-            <!-- LIVRE V -->
-
-            <li class="toc-pending">
-
-              <span class="toc-label">
-                Livre V
-              </span>
-
-              <span class="toc-name">
-                Les Atouts, les objets et les options
-              </span>
-
-              <span class="toc-status">
-                Publication à venir
-              </span>
-
+            <li>
+              <a href="livre-5.html">
+                <span class="toc-label">
+                  Livre V
+                </span>
+                <span class="toc-name">
+                  Les Atouts, les objets et les options
+                </span>
+              </a>
             </li>
 
-
-            <!-- CONCLUSION -->
-
-            <li class="toc-pending">
-
-              <span class="toc-label">
-                Conclusion
-              </span>
-
-              <span class="toc-name">
-                Le laboratoire des imaginaires
-              </span>
-
-              <span class="toc-status">
-                Publication à venir
-              </span>
-
+            <li>
+              <a href="conclusion.html">
+                <span class="toc-label">
+                  Conclusion
+                </span>
+                <span class="toc-name">
+                  Le laboratoire des imaginaires
+                </span>
+              </a>
             </li>
 
-
-            <!-- BIBLIOGRAPHIE -->
-
-            <li class="toc-pending">
-
-              <span class="toc-label">
-                Bibliographie
-              </span>
-
-              <span class="toc-name">
-                Références et documentation raisonnée
-              </span>
-
-              <span class="toc-status">
-                Publication à venir
-              </span>
-
+            <li>
+              <a href="bibliographie.html">
+                <span class="toc-label">
+                  Bibliographie
+                </span>
+                <span class="toc-name">
+                  Références et documentation raisonnée
+                </span>
+              </a>
             </li>
 
           </ol>
@@ -493,56 +435,54 @@
         </nav>
 
 
-        <!-- ====================================
-             DOCUMENTATION
-             ==================================== -->
+        <!-- DOCUMENTATION -->
 
         <section
           class="resource-section"
           id="documentation"
         >
 
-          <h2>
-            Documentation
-          </h2>
+          <h2>Documentation</h2>
 
           <p class="resource-description">
-            La documentation de M.I.S.E. réunira
+            La documentation de M.I.S.E. rassemble
             une bibliographie commentée et des
-            ressources consacrées au jeu de rôle,
-            à la conception des systèmes narratifs,
-            à l'improvisation et à la création
-            collective.
+            recherches consacrées au jeu de rôle,
+            à l'improvisation, aux systèmes narratifs
+            et à la création collective.
           </p>
 
           <p class="resource-description">
-            Les références seront présentées
-            avec leurs informations bibliographiques,
-            des commentaires sur leur pertinence
-            et des liens vers les sources
+            Chaque référence est accompagnée
+            de ses informations bibliographiques,
+            d'un commentaire sur sa pertinence
+            et de liens vers les sources
             documentaires disponibles.
+          </p>
+
+          <p>
+            <a href="bibliographie.html">
+              Consulter la bibliographie →
+            </a>
           </p>
 
         </section>
 
 
-        <!-- ====================================
-             LIVRET PDF
-             ==================================== -->
+        <!-- LIVRET PDF -->
 
         <section
           class="resource-section"
           id="livret"
         >
 
-          <h2>
-            Le livret de règles
-          </h2>
+          <h2>Le livret de règles</h2>
 
           <p class="resource-description">
-            L'intégralité du corpus sera également
-            proposée sous forme d'un livret PDF
-            au format A4, adapté à la lecture
+            Le livret complet de M.I.S.E. réunit
+            l'introduction, les cinq livres de règles,
+            la conclusion et la bibliographie.
+            Sa mise en page A4 est adaptée à la lecture
             et à l'impression.
           </p>
 
@@ -553,12 +493,11 @@
             </h3>
 
             <p class="download-description">
-              Introduction, cinq livres,
-              conclusion et bibliographie.
+              Version intégrale du corpus de règles.
             </p>
 
             <span class="resource-unavailable">
-              Téléchargement prochainement disponible
+              Téléchargement PDF en cours de mise en ligne
             </span>
 
           </div>
@@ -566,21 +505,17 @@
         </section>
 
 
-        <!-- ====================================
-             APPLICATION
-             ==================================== -->
+        <!-- APPLICATION -->
 
         <section
           class="resource-section"
           id="application"
         >
 
-          <h2>
-            L'application compagnon
-          </h2>
+          <h2>L'application compagnon</h2>
 
           <p class="resource-description">
-            Une application web permet de créer
+            L'application M.I.S.E. permet de créer
             et de consulter les personnages,
             de gérer leurs réserves de Points
             d'Action et de résoudre les actions
@@ -588,10 +523,9 @@
           </p>
 
           <p class="resource-description">
-            Elle peut être installée sur les
-            appareils compatibles et fonctionne
-            hors connexion une fois ses ressources
-            enregistrées.
+            Elle s'installe sur les appareils
+            compatibles et fonctionne hors connexion
+            une fois ses ressources enregistrées.
           </p>
 
           <div class="actions">
@@ -608,8 +542,6 @@
           </div>
 
           <p class="small-text">
-            Application web installable depuis
-            un navigateur compatible.
             Les personnages sont enregistrés
             localement sur l'appareil utilisé.
           </p>
@@ -617,9 +549,51 @@
         </section>
 
 
-        <!-- ====================================
-             CRÉDIT
-             ==================================== -->
+        <!-- UNIVERS DE JEU -->
+
+        <aside class="universe-box" id="interstices">
+
+          <span class="universe-label">
+            Un univers pour M.I.S.E.
+          </span>
+
+          <h2>
+            Le Bureau des Interstices
+          </h2>
+
+          <p class="universe-period">
+            Paris, 1966.
+          </p>
+
+          <p>
+            Dans une France gaullienne où les
+            administrations cultivent le secret,
+            un bureau discret s'intéresse aux
+            phénomènes que les institutions
+            ne savent pas classer.
+          </p>
+
+          <p>
+            Entre enquêtes insolites, étrangetés
+            du quotidien et bureaucratie française,
+            Le Bureau des Interstices propose
+            un univers de jeu aux accents
+            fantastiques, légèrement décalé,
+            où l'inexplicable conserve
+            une certaine politesse.
+          </p>
+
+          <a
+            class="universe-link"
+            href="bureau.html"
+          >
+            Découvrir Le Bureau des Interstices →
+          </a>
+
+        </aside>
+
+
+        <!-- CRÉDITS -->
 
         <div class="home-credit">
 
@@ -642,9 +616,7 @@
   </main>
 
 
-  <!-- ==========================================
-       PIED DE PAGE
-       ========================================== -->
+  <!-- PIED DE PAGE -->
 
   <footer class="site-footer">
 
@@ -672,4 +644,4 @@
 </div>
 
 </body>
-                </html>
+</html>
