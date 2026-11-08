@@ -1,1 +1,675 @@
+<!doctype html>
+<html lang="fr">
 
+<head>
+
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="description"
+    content="M.I.S.E. — Maîtrise, Initiative, Synergie, Engagement. Une grammaire de jeu de rôle narratif sans dés pour improviser des histoires ensemble."
+  >
+
+  <meta name="theme-color" content="#ffffff">
+
+  <title>M.I.S.E. — Une grammaire de jeu de rôle</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    /*
+    ================================================
+    AJUSTEMENTS PROPRES À LA PAGE D'ACCUEIL
+    ================================================
+    */
+
+    .home-intro {
+      margin: 0 0 48px;
+    }
+
+    .home-intro p {
+      margin-bottom: 1.4em;
+    }
+
+    .home-section-title {
+      margin-top: 0;
+    }
+
+    .toc-label {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--gris-fonce);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .toc-name {
+      display: block;
+      color: var(--texte);
+      font-size: 17px;
+      line-height: 1.5;
+    }
+
+    .toc-list li {
+      padding: 14px 0;
+    }
+
+    .toc-list li a {
+      padding: 0;
+    }
+
+    .toc-list li a:hover .toc-name {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .toc-pending {
+      opacity: 0.68;
+    }
+
+    .toc-status {
+      display: block;
+      margin-top: 4px;
+      color: var(--gris-fonce);
+      font-size: 12px;
+      font-style: italic;
+    }
+
+    .editorial-note {
+      margin: 42px 0;
+      padding: 24px 28px;
+      background: var(--gris-tres-clair);
+      border-radius: var(--arrondi);
+    }
+
+    .editorial-note p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.7;
+      font-style: italic;
+      text-align: left;
+    }
+
+    .resource-section {
+      margin-top: 56px;
+    }
+
+    .resource-section h2 {
+      margin-bottom: 22px;
+    }
+
+    .resource-description {
+      font-size: 16px;
+      line-height: 1.7;
+      text-align: left;
+    }
+
+    .resource-unavailable {
+      display: inline-block;
+      padding: 12px 22px;
+      border: 1px solid var(--gris-clair);
+      border-radius: var(--arrondi);
+      color: var(--gris-fonce);
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .home-credit {
+      padding-top: 24px;
+      border-top: var(--filet);
+    }
+
+    .home-credit p {
+      margin: 0;
+      color: var(--gris-fonce);
+      font-size: 13px;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    @media (max-width: 600px) {
+
+      .home-intro {
+        margin-bottom: 36px;
+      }
+
+      .toc-name {
+        font-size: 16px;
+      }
+
+      .editorial-note {
+        padding: 20px;
+      }
+
+      .editorial-note p {
+        font-size: 15px;
+      }
+
+      .resource-section {
+        margin-top: 42px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+<a class="skip-link" href="#contenu">
+  Aller au contenu
+</a>
+
+
+<div class="site">
+
+  <!-- ==========================================
+       EN-TÊTE
+       ========================================== -->
+
+  <header class="site-header">
+
+    <div class="header-inner">
+
+      <a
+        class="site-logo"
+        href="index.html"
+        aria-label="M.I.S.E. — Accueil"
+      >
+
+        <img
+          src="https://tolmatchevalexis-prog.github.io/mise-app/mise-icon-192.png"
+          alt=""
+          width="64"
+          height="64"
+        >
+
+        <span class="site-logo-text">
+          M.I.S.E.
+        </span>
+
+      </a>
+
+      <nav
+        class="site-nav"
+        aria-label="Navigation principale"
+      >
+
+        <a
+          href="index.html"
+          aria-current="page"
+        >
+          Accueil
+        </a>
+
+        <a href="#sommaire">
+          Les règles
+        </a>
+
+        <a href="#documentation">
+          Documentation
+        </a>
+
+        <a href="#application">
+          Application
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- ==========================================
+       CONTENU PRINCIPAL
+       ========================================== -->
+
+  <main id="contenu" class="page">
+
+    <div class="site-container">
+
+      <article class="page-content">
+
+
+        <!-- ====================================
+             IDENTITÉ
+             ==================================== -->
+
+        <div class="brand">
+
+          <img
+            src="https://tolmatchevalexis-prog.github.io/mise-app/mise-icon-192.png"
+            alt="Emblème de M.I.S.E."
+            width="112"
+            height="112"
+          >
+
+          <p class="brand-subtitle">
+            Une grammaire de jeu de rôle
+            pour improviser des histoires ensemble.
+          </p>
+
+        </div>
+
+
+        <!-- ====================================
+             INTRODUCTION
+             ==================================== -->
+
+        <section class="home-intro prose">
+
+          <p class="lead">
+            M.I.S.E. est un système de jeu de rôle
+            narratif sans dés, conçu pour accompagner
+            la création collective d'histoires.
+          </p>
+
+          <p>
+            Une partie de jeu de rôle est une histoire
+            qui s'invente à plusieurs. Les joueurs
+            incarnent des personnages, prennent des
+            initiatives et découvrent les conséquences
+            de leurs décisions dans un monde partagé.
+          </p>
+
+          <p>
+            Dans M.I.S.E., la résolution des actions
+            ne repose pas sur le hasard. Les joueurs
+            engagent volontairement des Points
+            d'Action en fonction des capacités de
+            leurs personnages et des difficultés
+            qu'ils rencontrent.
+          </p>
+
+          <p>
+            Le Narrateur propose les situations,
+            fait vivre le monde et accompagne
+            leurs conséquences. Les règles fournissent
+            un cadre commun, sans déterminer
+            à l'avance le déroulement de la fiction.
+          </p>
+
+        </section>
+
+
+        <!-- ====================================
+             TEXTE ÉDITORIAL
+             ==================================== -->
+
+        <aside class="editorial-note">
+
+          <p>
+            Une grammaire commune pour décider,
+            agir, se confronter et improviser.
+            Les règles organisent le jeu ;
+            les participants inventent l'histoire.
+          </p>
+
+        </aside>
+
+
+        <!-- ====================================
+             SOMMAIRE
+             ==================================== -->
+
+        <nav
+          class="toc"
+          id="sommaire"
+          aria-labelledby="sommaire-titre"
+        >
+
+          <h2
+            class="toc-title home-section-title"
+            id="sommaire-titre"
+          >
+            Sommaire
+          </h2>
+
+          <ol class="toc-list">
+
+
+            <!-- INTRODUCTION -->
+
+            <li class="toc-pending">
+
+              <span class="toc-label">
+                Introduction
+              </span>
+
+              <span class="toc-name">
+                Une grammaire de jeu de rôle
+              </span>
+
+              <span class="toc-status">
+                Publication à venir
+              </span>
+
+            </li>
+
+
+            <!-- LIVRE I -->
+
+            <li class="toc-pending">
+
+              <span class="toc-label">
+                Livre I
+              </span>
+
+              <span class="toc-name">
+                Le personnage
+              </span>
+
+              <span class="toc-status">
+                Publication à venir
+              </span>
+
+            </li>
+
+
+            <!-- LIVRE II -->
+
+            <li class="toc-pending">
+
+              <span class="toc-label">
+                Livre II
+              </span>
+
+              <span class="toc-name">
+                Les actions
+              </span>
+
+              <span class="toc-status">
+                Publication à venir
+              </span>
+
+            </li>
+
+
+            <!-- LIVRE III -->
+
+            <li class="toc-pending">
+
+              <span class="toc-label">
+                Livre III
+              </span>
+
+              <span class="toc-name">
+                Les oppositions
+              </span>
+
+              <span class="toc-status">
+                Publication à venir
+              </span>
+
+            </li>
+
+
+            <!-- LIVRE IV -->
+
+            <li class="toc-pending">
+
+              <span class="toc-label">
+                Livre IV
+              </span>
+
+              <span class="toc-name">
+                Les blessures et la récupération
+              </span>
+
+              <span class="toc-status">
+                Publication à venir
+              </span>
+
+            </li>
+
+
+            <!-- LIVRE V -->
+
+            <li class="toc-pending">
+
+              <span class="toc-label">
+                Livre V
+              </span>
+
+              <span class="toc-name">
+                Les Atouts, les objets et les options
+              </span>
+
+              <span class="toc-status">
+                Publication à venir
+              </span>
+
+            </li>
+
+
+            <!-- CONCLUSION -->
+
+            <li class="toc-pending">
+
+              <span class="toc-label">
+                Conclusion
+              </span>
+
+              <span class="toc-name">
+                Le laboratoire des imaginaires
+              </span>
+
+              <span class="toc-status">
+                Publication à venir
+              </span>
+
+            </li>
+
+
+            <!-- BIBLIOGRAPHIE -->
+
+            <li class="toc-pending">
+
+              <span class="toc-label">
+                Bibliographie
+              </span>
+
+              <span class="toc-name">
+                Références et documentation raisonnée
+              </span>
+
+              <span class="toc-status">
+                Publication à venir
+              </span>
+
+            </li>
+
+          </ol>
+
+        </nav>
+
+
+        <!-- ====================================
+             DOCUMENTATION
+             ==================================== -->
+
+        <section
+          class="resource-section"
+          id="documentation"
+        >
+
+          <h2>
+            Documentation
+          </h2>
+
+          <p class="resource-description">
+            La documentation de M.I.S.E. réunira
+            une bibliographie commentée et des
+            ressources consacrées au jeu de rôle,
+            à la conception des systèmes narratifs,
+            à l'improvisation et à la création
+            collective.
+          </p>
+
+          <p class="resource-description">
+            Les références seront présentées
+            avec leurs informations bibliographiques,
+            des commentaires sur leur pertinence
+            et des liens vers les sources
+            documentaires disponibles.
+          </p>
+
+        </section>
+
+
+        <!-- ====================================
+             LIVRET PDF
+             ==================================== -->
+
+        <section
+          class="resource-section"
+          id="livret"
+        >
+
+          <h2>
+            Le livret de règles
+          </h2>
+
+          <p class="resource-description">
+            L'intégralité du corpus sera également
+            proposée sous forme d'un livret PDF
+            au format A4, adapté à la lecture
+            et à l'impression.
+          </p>
+
+          <div class="download-box">
+
+            <h3 class="download-title">
+              M.I.S.E. — Livret complet
+            </h3>
+
+            <p class="download-description">
+              Introduction, cinq livres,
+              conclusion et bibliographie.
+            </p>
+
+            <span class="resource-unavailable">
+              Téléchargement prochainement disponible
+            </span>
+
+          </div>
+
+        </section>
+
+
+        <!-- ====================================
+             APPLICATION
+             ==================================== -->
+
+        <section
+          class="resource-section"
+          id="application"
+        >
+
+          <h2>
+            L'application compagnon
+          </h2>
+
+          <p class="resource-description">
+            Une application web permet de créer
+            et de consulter les personnages,
+            de gérer leurs réserves de Points
+            d'Action et de résoudre les actions
+            et les oppositions.
+          </p>
+
+          <p class="resource-description">
+            Elle peut être installée sur les
+            appareils compatibles et fonctionne
+            hors connexion une fois ses ressources
+            enregistrées.
+          </p>
+
+          <div class="actions">
+
+            <a
+              class="button button-primary"
+              href="https://tolmatchevalexis-prog.github.io/mise-app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Accéder à l'application
+            </a>
+
+          </div>
+
+          <p class="small-text">
+            Application web installable depuis
+            un navigateur compatible.
+            Les personnages sont enregistrés
+            localement sur l'appareil utilisé.
+          </p>
+
+        </section>
+
+
+        <!-- ====================================
+             CRÉDIT
+             ==================================== -->
+
+        <div class="home-credit">
+
+          <p>
+            M.I.S.E. — Maîtrise · Initiative ·
+            Synergie · Engagement
+          </p>
+
+          <p>
+            Conception et écriture :
+            Alexis Tolmatchev.
+          </p>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+  <!-- ==========================================
+       PIED DE PAGE
+       ========================================== -->
+
+  <footer class="site-footer">
+
+    <div class="footer-inner">
+
+      <p>
+        M.I.S.E. — Une grammaire de jeu de rôle
+        pour improviser des histoires ensemble.
+      </p>
+
+      <p>
+        <a
+          href="https://github.com/tolmatchevalexis-prog/mise-rules"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Dépôt GitHub
+        </a>
+      </p>
+
+    </div>
+
+  </footer>
+
+</div>
+
+</body>
+                </html>
