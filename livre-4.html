@@ -1,1 +1,827 @@
+<!doctype html>
+<html lang="fr">
 
+<head>
+
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="description"
+    content="Livre IV des règles de M.I.S.E. : dégâts, blessures, épuisement, récupération, repos, soins et Sacrifice."
+  >
+
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Livre IV — Les blessures et la récupération | M.I.S.E.</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<a class="skip-link" href="#contenu">
+  Aller au contenu
+</a>
+
+<div class="site">
+
+  <!-- ==========================================
+       EN-TÊTE
+       ========================================== -->
+
+  <header class="site-header">
+
+    <div class="header-inner">
+
+      <a
+        class="site-logo"
+        href="index.html"
+        aria-label="M.I.S.E. — Accueil"
+      >
+
+        <img
+          src="https://tolmatchevalexis-prog.github.io/mise-app/mise-icon-192.png"
+          alt=""
+          width="64"
+          height="64"
+        >
+
+        <span class="site-logo-text">
+          M.I.S.E.
+        </span>
+
+      </a>
+
+      <nav
+        class="site-nav"
+        aria-label="Navigation principale"
+      >
+
+        <a href="index.html">
+          Accueil
+        </a>
+
+        <a
+          href="index.html#sommaire"
+          aria-current="page"
+        >
+          Les règles
+        </a>
+
+        <a href="index.html#documentation">
+          Documentation
+        </a>
+
+        <a href="index.html#application">
+          Application
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- ==========================================
+       CORPUS
+       ========================================== -->
+
+  <main id="contenu" class="page">
+
+    <div class="site-container">
+
+      <article class="page-content prose">
+
+
+        <!-- TITRE DU LIVRE -->
+
+        <header class="book-header">
+
+          <span class="book-number">
+            Livre IV
+          </span>
+
+          <h1 class="book-title">
+            Les blessures et la récupération
+          </h1>
+
+        </header>
+
+
+        <!-- ====================================
+             RECEVOIR DES DÉGÂTS
+             ==================================== -->
+
+        <section
+          class="chapter-section"
+          id="degats"
+        >
+
+          <h2>
+            Recevoir des dégâts
+          </h2>
+
+          <p>
+            Les dégâts réduisent les PA disponibles
+            dans la réserve touchée.
+          </p>
+
+          <p>
+            Ils peuvent représenter un choc physique,
+            un effort imposé, une pression mentale
+            ou une perte d’assurance, selon la scène.
+          </p>
+
+          <p>
+            Une blessure est une conséquence durable.
+            Son risque et sa nature doivent avoir été
+            annoncés avant la mise.
+          </p>
+
+        </section>
+
+
+        <!-- ====================================
+             QUAND NOTER UNE BLESSURE
+             ==================================== -->
+
+        <section
+          class="chapter-section"
+          id="blessure"
+        >
+
+          <h2>
+            Quand noter une blessure
+          </h2>
+
+          <p>
+            Dans une situation présentant ce risque,
+            un personnage reçoit une blessure lorsqu’au
+            moins un des critères suivants est rempli :
+          </p>
+
+          <ul>
+
+            <li>
+              il reçoit 4 dégâts ou plus dans le même
+              échange, après application de sa posture
+              et des protections éventuelles ;
+            </li>
+
+            <li>
+              il termine l’échange à 0 PA dans
+              la réserve touchée, après avoir reçu
+              au moins 1 dégât pendant cet échange.
+            </li>
+
+          </ul>
+
+          <p>
+            Les deux critères réunis produisent
+            une seule blessure.
+          </p>
+
+          <p>
+            Hors opposition, on applique les mêmes
+            critères à la résolution de l’action,
+            après la mise et les dégâts annoncés.
+          </p>
+
+          <p>
+            Atteindre zéro en payant seulement
+            son propre effort entraîne de l’épuisement,
+            sans blessure automatique.
+          </p>
+
+          <p>
+            Un personnage déjà à zéro peut encore
+            recevoir des dégâts. Ces dégâts comptent
+            pour déterminer une blessure, même si les
+            PA disponibles ne peuvent plus diminuer.
+          </p>
+
+          <p>
+            À l’inverse, si une protection ramène
+            les dégâts à zéro, ces dégâts n’entraînent
+            aucune blessure.
+          </p>
+
+        </section>
+
+
+        <!-- ====================================
+             CONSÉQUENCES DURABLES
+             ==================================== -->
+
+        <section
+          class="chapter-section"
+          id="consequences"
+        >
+
+          <h2>
+            Les conséquences durables
+          </h2>
+
+          <p>
+            Chaque blessure active retire 3 PA
+            au maximum de la réserve concernée.
+          </p>
+
+          <div class="note">
+
+            <p>
+              <strong>
+                Maximum actuel = réserve de base
+                - 3 PA par blessure active
+              </strong>
+            </p>
+
+          </div>
+
+          <p>
+            Le résultat ne descend jamais sous zéro.
+            Si les PA disponibles dépassent le nouveau
+            maximum, ramenez-les à ce maximum.
+          </p>
+
+
+          <!-- TABLEAU DES BLESSURES -->
+
+          <div
+            class="table-wrapper"
+            role="region"
+            aria-label="Exemples de blessures selon les réserves"
+            tabindex="0"
+          >
+
+            <table>
+
+              <thead>
+
+                <tr>
+                  <th scope="col">
+                    Réserve
+                  </th>
+
+                  <th scope="col">
+                    Exemples de blessures
+                  </th>
+                </tr>
+
+              </thead>
+
+              <tbody>
+
+                <tr>
+
+                  <td>
+                    <strong>Vigueur</strong>
+                  </td>
+
+                  <td>
+                    Une plaie, une entorse,
+                    une atteinte physique persistante.
+                  </td>
+
+                </tr>
+
+                <tr>
+
+                  <td>
+                    <strong>Volonté</strong>
+                  </td>
+
+                  <td>
+                    Un choc durable, une peur persistante,
+                    des difficultés de concentration.
+                  </td>
+
+                </tr>
+
+                <tr>
+
+                  <td>
+                    <strong>Influence</strong>
+                  </td>
+
+                  <td>
+                    Une réputation compromise,
+                    une confiance rompue,
+                    une alliance endommagée.
+                  </td>
+
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+
+          <p>
+            La blessure doit correspondre
+            à ce qui s’est joué.
+          </p>
+
+
+          <div class="example">
+
+            <p>
+              Elle réduit les récupérations possibles
+              et le plafond des mises en opposition.
+              Un maximum passant de 11 à 8 PA fait
+              ainsi passer ce plafond de 6 à 4.
+            </p>
+
+          </div>
+
+
+          <!-- EXEMPLE NARRATIF -->
+
+          <div class="example">
+
+            <span class="example-title">
+              Le coup qu’on n’avait pas vu venir
+            </span>
+
+            <p>
+              Nils lance son épaule en avant.
+              Maëlle attend le dernier instant,
+              pivote et le laisse passer.
+              Il heurte le mur. Pendant un instant,
+              il n’entend plus que sa propre respiration.
+            </p>
+
+            <p>
+              Tous deux commencent avec 11 PA
+              de Vigueur. Le Narrateur avait annoncé
+              un risque de blessure.
+            </p>
+
+            <p>
+              Maëlle, Maître en combat, mise 1 PA
+              en Économique. Son score est de 6
+              (1 + 5).
+            </p>
+
+            <p>
+              Nils, Novice, mise 1 PA en Offensive.
+              Le triangle lui donne +2 contre
+              l’Économique. Son score est de 4
+              (1 + 1 + 2).
+            </p>
+
+            <p>
+              Nils perd de 2 points. Son Offensive
+              double les dégâts reçus.
+              Après avoir payé sa mise et subi
+              4 dégâts, il lui reste 6 PA.
+              Il note une blessure et son maximum
+              passe à 8 PA.
+            </p>
+
+            <p>
+              Maëlle paie 1 PA puis le récupère
+              grâce à l’Économique.
+              Elle termine à 11 PA.
+            </p>
+
+          </div>
+
+        </section>
+
+
+        <!-- ====================================
+             L'ÉPUISEMENT
+             ==================================== -->
+
+        <section
+          class="chapter-section"
+          id="epuisement"
+        >
+
+          <h2>
+            L’épuisement
+          </h2>
+
+          <p>
+            À 0 PA disponibles, le personnage
+            est épuisé dans la réserve concernée.
+            Il ne peut plus y payer de mise,
+            d’aide ou d’activation.
+          </p>
+
+          <p>
+            Il conserve la défense sans mise
+            décrite au Livre III si son maximum
+            reste positif.
+          </p>
+
+          <p>
+            À 0 de maximum, il ne peut plus
+            agir avec cette réserve avant
+            des soins adaptés.
+          </p>
+
+          <p>
+            Ces deux situations doivent apparaître
+            dans la fiction : un souffle trop court,
+            une attention qui se défait, des paroles
+            qui ne portent plus.
+            Leur expression dépend du personnage
+            et de ce qu’il vient de traverser.
+          </p>
+
+        </section>
+
+
+        <!-- ====================================
+             PAUSE COURTE
+             ==================================== -->
+
+        <section
+          class="chapter-section"
+          id="pause-courte"
+        >
+
+          <h2>
+            La pause courte
+          </h2>
+
+          <p>
+            Une pause courte offre une véritable
+            possibilité de retrouver ses moyens :
+            s’asseoir à l’abri, reprendre son souffle,
+            se soustraire un moment à la pression.
+          </p>
+
+          <p>
+            Un changement de décor ou une coupure
+            de scène ne suffit pas à lui seul.
+          </p>
+
+          <p>
+            Le personnage récupère la moitié
+            des PA manquants jusqu’au maximum
+            actuel, arrondie au supérieur.
+          </p>
+
+
+          <!-- TABLEAU DE RÉCUPÉRATION -->
+
+          <div
+            class="table-wrapper"
+            role="region"
+            aria-label="Exemples de récupération pendant une pause courte"
+            tabindex="0"
+          >
+
+            <table>
+
+              <thead>
+
+                <tr>
+                  <th scope="col">
+                    Avant la pause
+                  </th>
+
+                  <th scope="col">
+                    PA récupérés
+                  </th>
+
+                  <th scope="col">
+                    Après la pause
+                  </th>
+                </tr>
+
+              </thead>
+
+              <tbody>
+
+                <tr>
+                  <td>3 PA sur un maximum de 11</td>
+                  <td>4</td>
+                  <td>7 PA sur 11</td>
+                </tr>
+
+                <tr>
+                  <td>3 PA sur un maximum de 8</td>
+                  <td>3</td>
+                  <td>6 PA sur 8</td>
+                </tr>
+
+                <tr>
+                  <td>0 PA sur un maximum de 8</td>
+                  <td>4</td>
+                  <td>4 PA sur 8</td>
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+
+          <p>
+            Une même période de repos donne
+            une seule récupération.
+            Elle ne peut pas être découpée
+            artificiellement pour multiplier
+            les pauses courtes.
+          </p>
+
+
+          <!-- EXEMPLE -->
+
+          <div class="example">
+
+            <span class="example-title">
+              Derrière le rideau de fer
+            </span>
+
+            <p>
+              Dans l’arrière-boutique, quelqu’un
+              a laissé une bouilloire sur un réchaud.
+              Maëlle s’assied entre deux caisses.
+              Au-dehors, la rue retrouve peu à peu
+              ses bruits ordinaires.
+            </p>
+
+            <p>
+              Elle possède 3 PA de Vigueur
+              sur un maximum actuel de 8.
+              Il lui manque 5 PA et cette pause
+              lui en rend 3.
+            </p>
+
+            <p>
+              Elle repart avec 6 PA sur 8.
+            </p>
+
+            <p>
+              Sa blessure reste active.
+              Elle a retrouvé une partie
+              de ses forces, pas sa pleine capacité.
+            </p>
+
+          </div>
+
+        </section>
+
+
+        <!-- ====================================
+             REPOS LONG ET SOINS
+             ==================================== -->
+
+        <section
+          class="chapter-section"
+          id="repos-long"
+        >
+
+          <h2>
+            Le repos long et les soins
+          </h2>
+
+          <p>
+            Un repos long restaure chaque réserve
+            jusqu’à son maximum actuel.
+          </p>
+
+          <p>
+            Le Narrateur en précise la durée
+            et les conditions selon l’univers
+            et le rythme de la campagne.
+          </p>
+
+          <p>
+            Les blessures demandent des soins
+            ou une réparation adaptés à leur nature.
+            Lorsqu’une blessure est soignée,
+            rayez-la puis recalculez le maximum
+            à partir de la réserve de base
+            et des blessures restantes.
+          </p>
+
+          <p>
+            Soigner une blessure ne rend pas
+            automatiquement de PA disponibles,
+            sauf si un effet le prévoit explicitement.
+          </p>
+
+          <p>
+            Lorsque le maximum est à zéro,
+            il faut d’abord soigner suffisamment
+            de blessures pour retrouver
+            un maximum positif.
+            Le personnage pourra ensuite récupérer
+            des PA.
+          </p>
+
+        </section>
+
+
+        <!-- ====================================
+             LE SACRIFICE
+             ==================================== -->
+
+        <section
+          class="chapter-section"
+          id="sacrifice"
+        >
+
+          <h2>
+            Le Sacrifice
+          </h2>
+
+          <p>
+            Un personnage peut forcer sur son intégrité
+            pour retrouver de quoi agir.
+          </p>
+
+          <p>
+            Une fois par scène, toutes réserves
+            confondues, il peut subir volontairement
+            une blessure et récupérer immédiatement
+            3 PA dans la réserve correspondante.
+          </p>
+
+          <p>
+            Une scène est un épisode continu,
+            organisé autour d’une situation
+            et d’un enjeu. Le Narrateur
+            en annonce le début et la fin.
+          </p>
+
+          <p>
+            Pour utiliser le Sacrifice :
+          </p>
+
+          <ol>
+
+            <li>
+              notez la nouvelle blessure ;
+            </li>
+
+            <li>
+              recalculez le maximum à partir
+              de la réserve de base ;
+            </li>
+
+            <li>
+              ajoutez 3 PA disponibles,
+              sans dépasser ce nouveau maximum ;
+            </li>
+
+            <li>
+              résolvez l’action avec ses coûts
+              et ses risques habituels.
+            </li>
+
+          </ol>
+
+          <p>
+            En opposition, le plafond de mise
+            se calcule à partir du maximum
+            ainsi réduit.
+          </p>
+
+          <p>
+            Le Sacrifice reste possible à zéro PA
+            si le nouveau maximum est positif.
+            Il ne permet pas de repartir
+            d’un maximum à zéro.
+          </p>
+
+          <p>
+            La blessure volontaire s’ajoute
+            aux blessures existantes.
+            Elle peut être suivie d’une blessure
+            causée par l’adversaire.
+          </p>
+
+
+          <!-- EXEMPLE -->
+
+          <div class="example">
+
+            <span class="example-title">
+              Encore quelques marches
+            </span>
+
+            <p>
+              Nils s’est arrêté au milieu
+              de l’escalier. Plus haut,
+              une main frappe encore contre
+              la porte fermée.
+            </p>
+
+            <p>
+              Il voudrait répondre.
+              Il n’a plus assez de souffle.
+            </p>
+
+            <p>
+              Sa Vigueur est à 0 PA,
+              avec une blessure active
+              et un maximum de 8.
+            </p>
+
+            <p>
+              Son joueur choisit le Sacrifice.
+            </p>
+
+            <p>
+              Nils se redresse contre la rampe.
+              Il sent l’ancienne douleur s’étendre,
+              mais il recommence à monter.
+            </p>
+
+            <p>
+              La deuxième blessure abaisse
+              son maximum à 5 PA.
+              Il récupère 3 PA de Vigueur.
+            </p>
+
+            <p>
+              Son plafond de mise en opposition
+              est désormais de 3.
+            </p>
+
+          </div>
+
+        </section>
+
+
+        <!-- ====================================
+             NAVIGATION ENTRE LES LIVRES
+             ==================================== -->
+
+        <nav
+          class="chapter-navigation"
+          aria-label="Navigation entre les chapitres"
+        >
+
+          <a href="livre-3.html">
+            ← Livre III — Les oppositions
+          </a>
+
+          <a
+            class="next"
+            href="livre-5.html"
+          >
+            Livre V — Les Atouts,
+            les objets et les options →
+          </a>
+
+        </nav>
+
+
+        <a
+          class="back-to-toc"
+          href="index.html#sommaire"
+        >
+          Retour au sommaire
+        </a>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+  <!-- ==========================================
+       PIED DE PAGE
+       ========================================== -->
+
+  <footer class="site-footer">
+
+    <div class="footer-inner">
+
+      <p>
+        M.I.S.E. — Maîtrise · Initiative ·
+        Synergie · Engagement
+      </p>
+
+      <p>
+        Conception et écriture :
+        Alexis Tolmatchev.
+      </p>
+
+    </div>
+
+  </footer>
+
+</div>
+
+</body>
+              </html>
